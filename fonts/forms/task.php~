@@ -1,0 +1,37 @@
+
+<?php
+function add_car()
+{
+require('../db/db_connect.php');
+$car_id=$_POST['id'];
+$car_name=$_POST['name'];
+$car_model=$_POST['model'];
+$car_quantity=$_POST['quantity'];
+$price_houre=$_POST['pricehoure'];
+$price_day=$_POST['priceday'];
+$price_month=$_POST['pricemonth'];
+$val=filter_input(INPUT_POST,"id",FILTER_VALIDATE_INT);
+$val1=filter_input(INPUT_POST,"quantity",FILTER_VALIDATE_INT);
+$val2=filter_input(INPUT_POST,"pricehoure",FILTER_VALIDATE_INT);
+$val3=filter_input(INPUT_POST,"priceday",FILTER_VALIDATE_INT);
+$val4=filter_input(INPUT_POST,"model",FILTER_VALIDATE_INT);
+$val5=filter_input(INPUT_POST,"pricemonth",FILTER_VALIDATE_INT);
+
+
+$sql="INSERT INTO cars(car_id,car_name,car_model_year,quantity,price_per_hour,price_per_day,price_per_month)VALUES('$car_id','$car_name','$car_model','$car_quantity','$price_houre','$price_day','$price_month')";
+if($val&&$val1&&$val2&&$val3&&$val4&&$val5	)
+{
+if($_POST['s'])
+{
+	mysqli_query($db_connect,$sql);
+	header("Location:..\pages\admin-profile.php");	
+}
+}
+else
+{
+	echo "Error In Entering Data Try Again ";
+}
+}
+add_car();
+
+?>

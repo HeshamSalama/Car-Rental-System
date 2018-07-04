@@ -1,0 +1,19 @@
+	<?php 
+
+    if(!in_array($type, $acceptable) && (!empty($type)))
+{
+    echo 0;
+}
+else
+{
+session_start();
+$dir = dirname(__FILE__) . '/../Images/Cars/';
+    $path = $_FILES['photo']['tmp_name'] ;
+    $name= $_FILES['photo']['name'] ;
+    $size = $_FILES['photo']['size'] ;
+    $type = $_FILES['photo']['type'] ;
+    move_uploaded_file($path,$dir.$name);
+    $_SESSION['photo'] = "Images/Cars/"."$name";
+}
+
+?>

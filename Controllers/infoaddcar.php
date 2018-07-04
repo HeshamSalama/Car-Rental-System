@@ -1,0 +1,67 @@
+ <?php
+session_start();
+include'../Models/Cars.php';
+include'../Models/Admin.php';
+$object=new Cars();
+$object2=new Admin();
+$car_id=$_POST['id'];
+$car_name=$_POST['name'];
+$car_model=$_POST['model'];
+$car_quantity=$_POST['quantity'];
+$price_houre=$_POST['pricehour'];
+$price_day=$_POST['priceday'];
+$engine=$_POST['engine'];
+$photo =  $_SESSION['photo'];
+$type = $_SESSION['filetype'];
+    $acceptable = array(
+        'image/jpeg',
+        'image/jpg',
+        'image/gif',
+        'image/png'
+    );
+$object->setid($car_id);
+$object->setname($car_name);
+$object->setmodel($car_model);
+$object->setquantity($car_quantity);
+$object->sethoure($price_houre);
+$object->setday($price_day);
+$object->setPhoto($photo);
+$object->setengine($engine);
+$val1=filter_input(INPUT_POST,"quantity",FILTER_VALIDATE_INT);
+$val2=filter_input(INPUT_POST,"pricehour",FILTER_VALIDATE_INT);
+$val3=filter_input(INPUT_POST,"priceday",FILTER_VALIDATE_INT);
+$val4=filter_input(INPUT_POST,"engine",FILTER_VALIDATE_INT);
+$val5=!preg_match('/[^A-Za-z0-9]/',$car_id );
+$val6=!preg_match('/[^A-Za-z]/',$car_name);
+$val7=!preg_match('/[^0-9]/',$car_model);
+$val8=strlen($car_model);
+if($val1&&$val2&&$val3&&$val4&&$val5&&$val6&&$val7&&$val8==4&&in_array($type,$acceptable))
+{
+ $object2->Addcar($object); 
+ echo 1;
+}
+    else
+{
+    if(!$val5||$car_id=="")
+        echo 2;
+        else if(!$val6||$car_name=="")
+        echo 3;
+    else if(!$val7||$val8!=4||$car_model=="")
+        echo 4;
+    else if(!$val1||$car_quantity=="")
+    echo 5;
+    else if(!$val2||$price_houre=="")
+        echo 6;
+    else if(!$val3||$price_day=="")
+         echo 7;
+    else if(!$val4||$engine=="")
+        echo 8;
+        else if(!in_array($type,$acceptable))
+            echo 9;
+
+    
+}
+
+
+
+?>  

@@ -1,0 +1,75 @@
+
+<form action="..\Forms\task.php" method="POST">
+                                    <table style="width:100%">
+                                        <tr>
+                                            <td class="text-blue">
+                                                Car ID
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="id">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Car Name
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="name">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Car Model Year
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="model">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                               Quantity
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="quantity">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Price Per Hour
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="pricehoure">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Price Per Day
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="priceday">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Price Per Month
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="pricemonth">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Photo  
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="file" name="photo">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                        <div class="col-xs-12 text-right">
+                                           <input type="submit" name="s"  class="btn-blue" value="Add" />
+                            
+                                        </div>
+                                       
+                                        </form>

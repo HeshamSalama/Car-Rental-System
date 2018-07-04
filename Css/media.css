@@ -1,0 +1,30 @@
+/*Mobiles & Tablets*/
+@media (max-width: 767px)
+{
+.popup
+    {
+        width: 95%;
+        LEFT:2.5%;
+    }
+}
+/* Small Screen */
+@media (min-width: 768px) and (max-width: 993px)
+{
+.popup
+    {
+        width: 70%;
+        LEFT:15%;
+    }
+}
+}
+/* Medium Screen */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	
+	
+}
+/* Large Screen */
+@media (min-width: 1200px)
+{
+	
+}

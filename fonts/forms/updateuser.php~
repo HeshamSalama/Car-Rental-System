@@ -1,0 +1,56 @@
+<form action="../Functions/Edit_User.php" method="POST">
+                                    <table>
+                                        <tr>
+                                            <td class="text-blue">
+                                                FirstName
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="fname" value="<?php echo $_SESSION['fname']; ?>" required>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                LastName
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="lname" value="<?php echo $_SESSION['lname']; ?>">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Phone
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="phone" value="<?php echo $_SESSION['phone']; ?>">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                E-mail
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="text" name="email" value="<?php echo $_SESSION['email']; ?>">
+                                                
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Password
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="password" name="password" value="<?php echo $_SESSION['password']; ?>">
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-blue">
+                                                Confirm Password    
+                                            </td>
+                                            <td class="text-dark">
+                                                <input type="password" name="confirm-password" value="<?php echo $_SESSION['password']; ?>">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                        <div class="col-xs-12 text-right">
+                                            <button class="btn-blue" type="submit" name="update-info">Save</button>
+                                        </div>
+                                        </form>

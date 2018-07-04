@@ -1,0 +1,276 @@
+
+/***======================================================================================================***/
+
+.fl-left
+{
+    float:left;
+}
+.fl-right
+{
+    float:right;
+}
+/* start section our_product style */
+
+.our_product .back
+{
+    position: absolute;
+    top:0;
+    left:15px;
+    background: rgba(0,0,0,.8);
+    width: 94.9%;
+    height: 300px;
+    transition: .8s all ease-in-out;
+    opacity: 0;
+    color:#fff;
+    padding: 25px;
+}
+.our_product .back h3
+{
+    width:200px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.our_product .back p
+{
+    line-height: 1.6;
+}
+.our_product .back 
+{
+    
+}
+.our_product .back 
+{
+    
+}
+.our_product .back:hover 
+{
+    opacity: 1;
+}
+/** our_product_name **/
+.our_product .our_product_name h2 {
+	margin-top: 50px;
+    font-size: 35px;
+    font-weight:700;
+    color:#E54792;
+}
+.our_product .our_product_name .line {
+	margin:15px auto 45px;
+	width: 80px;
+    height: 2px;
+	background-color:rgba(51,51,51,0.9);
+}
+/** our_product_name **/
+
+/** our_product_events_portfolio_gallery **/
+/*** all_product ***/
+		
+.our_product .our_product_padding {
+	margin-bottom:70px;
+}
+
+.our_product .our_product_img{
+  border: 1px solid #000;
+  width: 100%;
+    height: 300px;
+  overflow: hidden;
+    position: relative;
+}
+
+.our_product .our_product_img img ,
+.image img {
+	width:100%;
+    height: 100%;
+	  transition: all 1.2s linear;
+	
+} 
+
+ .our_product .our_product_img:hover >  img{
+	  /*transform: scale(1.2);*/
+
+ }
+ /*
+ 
+ .our_product_content{
+	width:50%;
+	float:right;
+	
+}
+
+.button{
+	width:50%;
+	float:left;
+}
+
+*/
+
+
+.our_product .our_product_overlay .button {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    text-align: center;
+    background: #E54792;
+    cursor: pointer;
+    color: #fff;
+	margin-top: 5px;
+}
+  
+.our_product td ul li
+{
+    margin-top: 12px;
+    line-height: 30px;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    display: inline-block;
+
+}
+.our_product td ul.size li
+{
+    margin-top: 12px;
+    width: 30px;
+    height:30px;
+    line-height: 26px;
+    border-radius: 50%;
+    display: inline-block;
+    border:2px solid #ccc;
+
+}
+.our_product td ul li.red
+{
+    background:#c0392b;
+
+}
+.our_product td ul li.blue
+{
+    background: #34495e;
+}
+.our_product td ul li.green
+{
+    background: #27ae60;
+}
+.our_product td ul li.grey
+{
+    background: #bdc3c7;
+}
+/* end section our_product style */
+
+
+
+.our_product .product_order .form
+{
+	padding:15px 5px ;
+	margin:25px;
+    margin-top: 0px;
+	border:2px solid #bbb;
+}
+.our_product .product_order .form input,
+.our_product .product_order .form textarea
+{
+	height:25px;
+	resize:none;
+	background:none;
+	border:none;
+	border-bottom:1px solid #000;
+	color:#000;
+    font-size: 18px;
+	margin-bottom:15px;	
+}
+.our_product .modal-dialog
+{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+.our_product .modal-dialog .req-form
+{
+    text-align: center;
+}
+.our_product .product_order .form .requestnum
+{
+    width:50px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.our_product .req-result input
+{
+    width:80px;
+    text-align: center;
+}
+.our_product .req-result
+{
+    
+}
+.our_product .req-result 
+{
+        /*margin-left: 30px*/
+}
+.our_product .req-result select
+{
+    margin-top: 10px;
+    margin-left: 50px;
+}
+.our_product .product_order .form .type input,
+.our_product .product_order .form .deliver input
+
+{
+	height:15px;
+	width:auto;
+	background:none;
+	border:none;
+	color:#000;
+    margin-right: 5px;
+    margin-top:-5px;
+    
+}
+.our_product .product_order .form input[type="submit"]
+{
+	color:#000;
+	background:#fff;	
+	border:1px solid #000;
+	padding:10px 10px 30px 10px;	
+	width:150px;
+	font-size:16px;
+	transition:all ease-in-out .5s;
+	margin-top:10px;
+
+}
+.our_product .product_order .form input[type="submit"]:hover
+{
+	color:#fff;
+	background:#000;
+}
+.our_product .product_order .form input:focus,
+.our_product .product_order.form textarea:focus
+{
+	outline:none;	
+}
+::-webkit-input-placeholder 
+{
+    color: #000  !important;
+}
+
+:-moz-placeholder
+{
+    color: #000  !important;
+}
+::-moz-placeholder
+{
+    color: #000  !important;
+}
+:-ms-input-placeholder
+{
+    color: #000  !important;
+}
+input
+{
+    width:100%;
+}
+
+/***======================================================================================================***/
+
+
+
